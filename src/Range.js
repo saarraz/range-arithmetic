@@ -103,7 +103,10 @@ class Range {
                     // Range('0-2, 4-7')
                 this.contiguous_ranges = TinyRange.parse(a);
             } else if (Array.isArray(a)) {
-                if (Array.isArray(a[0])) {
+                if (a.length == 0) { 
+                    // Range([])
+                    this.contiguous_ranges = [];
+                } else if (Array.isArray(a[0])) {
                     // Range([[0, 2], [4, 7]])
                     const raw_ranges = a.map(contiguous_range_init => new ContiguousRange(contiguous_range_init));
                     this.contiguous_ranges = [];
