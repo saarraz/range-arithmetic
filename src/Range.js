@@ -113,7 +113,6 @@ class Range {
                     raw_ranges.forEach(contiguous_range => {
                         this.contiguous_ranges = this.add(new Range(contiguous_range)).contiguous_ranges;
                     });
-                    console.log(this.contiguous_ranges);
                 } else if (isNumber(a[0])) {
                     // Range([0, 2])
                     this.contiguous_ranges = [new ContiguousRange(a)];
