@@ -1,6 +1,6 @@
 {
   "name": "range-arithmetic",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A library for addition and subtraction of numeric ranges",
   "main": "lib/Range.js",
   "scripts": {
