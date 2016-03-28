@@ -69,7 +69,7 @@ class ContiguousRange {
             }
         } else {
             if (other.end > this.start) {
-                if (other.end > this.end) {
+                if (other.end >= this.end) {
                     // return is empty.
                     // [other.start [this.start this.end] other.end]
                     return new Range();
